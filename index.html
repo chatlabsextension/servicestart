@@ -1,0 +1,69 @@
+<style>
+  #voiceflow-chat {
+    display: block !important;
+    font-family: 'Open Sans', sans-serif;
+  }
+</style>
+<script type="module">
+  import {
+    BrowserDataExtension,
+    WaitingAnimationExtension,
+    DoneAnimationExtension,
+    OpenAIResponseExtension,
+    DisableInputExtension,
+  } from "https://chatlabsextension.github.io/WWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW/extensions.js";
+
+  (function (d, t) {
+    var v = d.createElement(t),
+      s = d.getElementsByTagName(t)[0];
+    v.onload = function () {
+      window.voiceflow.chat.load({
+        verify: { projectID: "WWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW" },
+        url: "https://general-runtime.voiceflow.com",
+        versionID: "production",
+        launch: {
+          event: {
+            type: "launch",
+            payload: {
+              currentURL: window.location.href,
+              currentTime: new Date().toISOString(),
+              userLanguage: navigator.language || navigator.userLanguage,
+            },
+          },
+        },
+        assistant: {
+          stylesheet:
+            "https://chatlabsextension.github.io/WWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW/style-bot.css",
+          persistence: "memory",
+          extensions: [
+            BrowserDataExtension,
+            WaitingAnimationExtension,
+            DoneAnimationExtension,
+            OpenAIResponseExtension,
+            DisableInputExtension,
+          ],
+        },
+      }).then(() => {
+        window.voiceflow.chat.proactive.clear(); 
+        window.voiceflow.chat.proactive.push(
+          { 
+            type: 'text', 
+            payload: { message: 'Hej!👋 Funderar du över något?' } 
+          },
+          { 
+            type: 'text', 
+            payload: { message: 'Skriv din fråga här så får du svar omedelbums!😊' } 
+          }
+        );
+        if (window.location.href === "WWWWWWW") {
+          setTimeout(function () {
+            window.voiceflow.chat.open();
+          }, 1000);
+        }
+      });
+    };
+    v.src = "https://chatlabsextension.github.io/WWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW/bundle.mjs";
+    v.type = "text/javascript";
+    s.parentNode.insertBefore(v, s);
+  })(document, "script");
+</script>
