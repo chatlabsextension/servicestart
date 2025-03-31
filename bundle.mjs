@@ -51314,7 +51314,7 @@ You might need to use a local HTTP server (instead of file://): https://reactjs.
       (e = arguments[n++]) && (t = R5(e)) && (a && (a += " "), (a += t));
     return a;
   }
-  const _C = "https://chatlabsextension.github.io/WWWWWWWWWWWWWWWWWWWWW";
+  const _C = "https://chatlabsextension.github.io/servicestart";
   var CC = ((e) => (
       (e.START_CHAT = "vfrc-start-chat"),
       (e.SEND_MESSAGE = "vfrc-send-message"),
@@ -53883,7 +53883,7 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
     Sie = "jsli365",
     _ie = "jsli366",
     Cie = "jsli367";
-  const Aie = "https://www.voiceflow.com/",
+  const Aie = "https://www.chatlabs.se/en",
     G5 = ({
       isSmall: e = !1,
       className: t,
@@ -53908,7 +53908,7 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
                 target: "_blank",
                 rel: "noreferrer",
                 className: _ie,
-                children: "Powered by Voiceflow",
+                children: "Powered by Chatlabs",
               }),
             }),
           f && oe.jsx("div", { className: Tie }),
