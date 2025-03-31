@@ -53883,7 +53883,7 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
     Sie = "jsli365",
     _ie = "jsli366",
     Cie = "jsli367";
-  const Aie = "https://www.chatlabs.se/en",
+  const Aie = "https://www.voiceflow.com/",
     G5 = ({
       isSmall: e = !1,
       className: t,
@@ -53908,7 +53908,7 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
                 target: "_blank",
                 rel: "noreferrer",
                 className: _ie,
-                children: "Powered by Chatlabs",
+                children: "Powered by Voiceflow",
               }),
             }),
           f && oe.jsx("div", { className: Tie }),
